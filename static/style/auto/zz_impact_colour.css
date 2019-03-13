@@ -1,0 +1,38 @@
+/* plum, not classic blue */
+.ep_tm_menu, .ep_tm_menu ul,
+.ep_form_action_button, .ep_form_internal_button, .ep_tm_searchbarbutton, .ep_blister_node_selected
+{
+  background-color: #6C0E23;
+  border-color: #B55F71; /* a shade lighter */
+  border-color: #511C27; /* a shade darker */
+}
+.ep_form_action_button:active, .ep_form_internal_button:active, .ep_tm_searchbarbutton:active, .ep_blister_node_selected:active {
+   border-color: #6C0E23;
+   background-color: #B55F71;
+}
+.ep_tm_menu li:hover
+{
+  background-color: #B55F71;
+  color: black;
+}
+.ep_tab_bar li a
+{
+  background-color: #B55F71;
+  background-image: none;
+  color: white;
+}
+.ep_tab_bar li.ep_tab_selected a
+{
+  color: black;
+}
+.ep_tm_key_tools a, .ep_tm_key_tools a:visited,
+a, a:visited
+{
+  color: #6C0E23; /* a shade darker? */
+}
+.ep_tm_key_tools a:hover,
+a:hover  
+{
+  color: #6C0E23;
+  text-decoration: underline;
+}

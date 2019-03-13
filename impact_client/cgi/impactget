@@ -1,0 +1,22 @@
+#!/usr/bin/perl -w -I/opt/eprints3/perl_lib
+
+use EPrints;
+use strict;
+use LWP::Simple qw(get);
+
+my $session = new EPrints::Session;
+return unless( defined $session );
+
+binmode STDOUT;
+
+my ( $o ) = $session->param( "o" );
+
+$o =~ s/[^0-9-]//g;
+
+if( $o )
+{
+  my $url = "http://impact.eprints-hosting.org/cgi/exportview/web_link/$o/HTMLFeed/$o.html";
+  my $html = get $url;
+
+  print $html;
+}

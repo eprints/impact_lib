@@ -1,0 +1,48 @@
+# for each of the facets, build a list of terms used and link to a complete result set filtered by the given facet/value
+# Justin Bradley, 24nov2017
+
+use EPrints;
+use strict;
+
+my $session = EPrints::Session->new();
+my $database = $session->get_database;
+my $dataset = $session->dataset( "eprint" );
+
+my $noop = sub { my ($p) = @_; return $p };
+my $subject = sub
+{
+  my ($subjectid) = @_;
+
+  my $subject = EPrints::DataObj::Subject->new( $session, $subjectid );
+  return $subjectid unless $subject;
+  return EPrints::Utils::tree_to_utf8( $subject->render_description() );
+};
+
+sub _index($$$$$)
+{
+  my ($label, $facet, $field, $table, $render_fn) = @_;
+
+  my $sql = "select count(T.$field), T.$field from $table T, eprint E where T.eprintid = E.eprintid and E.eprint_status = 'archive' group by $field order by $field desc";
+  my $sth = $session->get_database->prepare_select( $sql, 'limit' => 50 );
+  $session->get_database->execute( $sth , $sql );
+
+  my $output = "<div class='ep_facet_index_section'><div class='facet_header'>$label</div>\n";
+  $output .= "<ul class='ep_facet_index ep_facet_index_$facet'>\n";
+  while( my( $n,$data ) = $sth->fetchrow_array )
+  {
+    $output .= "<li><a href='/cgi/facet/archive/simple2?screen=XapianSearch&dataset=archive&order=&q=MATCH_ALL&facets=$facet:$data'>". &{$render_fn}($data). "</a></li>\n";
+  }
+  $output .= "</ul></div>\n";
+
+  print $output;
+}
+
+$session->send_http_header( content_type => "text/html; charset=UTF-8" );
+
+_index( "Division", "divisions", "divisions", "eprint_divisions", $subject );
+_index( "Difference", "imp_difference", "imp_difference", "eprint_imp_difference", $noop );
+_index( "Funder", "funding", "funding_funder_name", "eprint_funding_funder_name", $noop );
+_index( "Year", "year", "status_changed_year", "eprint", $noop );
+
+$session->terminate;
+

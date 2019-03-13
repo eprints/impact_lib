@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+  <epp:phrase id="metapage_title_link">Existing online documents</epp:phrase>
+  <epp:phrase id="eprint_fieldname_link">External Links</epp:phrase>
+  <epp:phrase id="eprint_fieldhelp_link"></epp:phrase>
+  <epp:phrase id="eprint_fieldname_link_link">Link</epp:phrase>
+  <epp:phrase id="eprint_fieldname_link_info">Info</epp:phrase>
+
+</epp:phrases>
+

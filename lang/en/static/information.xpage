@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE page SYSTEM "entities.dtd" >
+<xpage:page xmlns="http://www.w3.org/1999/xhtml" xmlns:xpage="http://eprints.org/ep3/xpage" xmlns:epc="http://eprints.org/ep3/control">
+<xpage:title>About the Repository</xpage:title>
+<xpage:body>
+
+<div style="text-align:center; line-height:4em;">
+
+This site is powered by <a href="{$config{base_url}}/eprints/">EPrints 3.4</a>, free software developed by the University of Southampton and EPrints Services.<br/>
+The EPrints Impact Flavour was developed by <a href="https://eprints.org/">EPrints Services</a> and <a href="https://www.gla.ac.uk/">The University of Glasgow</a>.<br/>
+<a href="https://www.gla.ac.uk/"><img src="/images/uni_of_glasgow.png" style="margin-right:10px;"/></a>
+<a href="https://eprints.org/"><img src="/images/eprints_services.png" style="margin-left:10px;"/></a><br/>
+Any correspondence concerning this specific repository should be sent to <a href="mailto:{$config{adminemail}}"><epc:print expr="$config{adminemail}" /></a>.<br/>
+
+</div>
+
+</xpage:body>
+</xpage:page>

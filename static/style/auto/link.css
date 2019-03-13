@@ -1,0 +1,10 @@
+.ep_external_links
+{
+  padding-left: 0;
+}
+
+.ep_external_links li
+{
+  list-style: none;
+  padding-bottom: 5px;
+}

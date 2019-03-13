@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+<epp:phrase id="eprint_fieldname_creators_guid">GUID</epp:phrase>
+<epp:phrase id="eprint_fieldname_creators_browse_id">Glasgow Author(s) Enlighten ID</epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_additional_funding">Would additional funding or support, such as the Glasgow KE &amp; Impact fund or the Impact Acceleration Accounts, assist your knowledge exchange and/or impact activities?</epp:phrase>
+<epp:phrase id="eprint_fieldname_imp_fund_glasgow_ke_fund">Glasgow KE Fund</epp:phrase>
+
+<epp:phrase id="eprint_fieldhelp_note_impact" type="XHTML">
+  <p>Please add any more information here.</p>
+  <p>If you have any questions not answered by the guidance, please email: <a href="mailto:rose-marie.barbeau@glasgow.ac.uk">rose-marie.barbeau@glasgow.ac.uk</a></p>
+</epp:phrase>
+
+</epp:phrases>
+

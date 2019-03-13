@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:cite="http://eprints.org/ep3/citation" xmlns:epc="http://eprints.org/ep3/control">
+
+<div class="ep_summary_box" id="{tmp__id}">
+  <div class="ep_summary_box_title">
+    <div class="ep_only_js" id="{tmp__id}_colbar" style="">
+      <epc:print expr="$box_title"/>
+    </div>
+  </div>
+  <div class="ep_summary_box_body" id="{tmp__id}_content" style="">
+    <div id="{tmp__id}_content_inner">         
+      <table class="main_meta_table" style="margin-bottom: 1em; margin-top: 1em; width:100%" cellpadding="3">
+                    
+      <epc:foreach expr="$data{box_metadata}" iterator="fieldname">
+        <epc:if test="is_set($item.property($fieldname))">
+
+          <tr class="main_meta_table_row">
+            <th align="right" class="rd_meta_table_th"><epc:phrase ref="eprint_fieldname_{$fieldname}" />:</th>
+            <td valign="top" class="rd_metatable_td"><epc:print expr="$item.property($fieldname)" /></td>
+          </tr>
+
+        </epc:if>
+      </epc:foreach>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+</cite:citation>

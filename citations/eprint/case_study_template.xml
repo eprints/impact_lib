@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+
+<cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:epc="http://eprints.org/ep3/control" xmlns:cite="http://eprints.org/ep3/citation" >
+
+<h2><i>Title (blank to be filled in later)</i></h2>
+
+<p>
+<b>Submitting Institution</b><br/>
+University of Glasgow
+</p>
+
+<p>
+<b>Unit of Assessment</b><br/>
+<i>Blank to be filled in later (or maybe draw from user table using REF data?)</i>
+</p>
+
+<p>
+<b>Summary Impact Type</b><br/>
+<i>Blank to be filled in later</i>
+</p>
+
+<p>
+<b>Research Subject Area(s)</b><br/>
+<i>Blank to be filled in later</i>
+</p>
+
+<h2>Summary of the impact</h2>
+<if test="imp_summary"><p><print expr="imp_summary"/></p></if>
+
+<h2>Underpinning research</h2>
+<p>
+<i>Blank to be filled in later</i>
+</p>
+
+<h2>Key researchers</h2>
+<i>Listed and in format: First Name, Last Name (Job Title [start_date_year – end_date_year or ‘present’])</i><br/>
+
+<if test="creators_name"><p><print expr="creators_name"/></p></if>
+
+<h2>References to the research</h2>
+<p>
+<i>I think this pulls in citation data on this research from scopus / wos.  Not sure under what criteria and probably outside scope for this work?</i>
+</p>
+
+<h2>Details of the impact</h2>
+
+<if test="imp_engagement"><p><print expr="imp_engagement"/></p></if>
+<if test="imp_contact_public_engagement"><p>Public engagement: <print expr="imp_contact_public_engagement"/></p></if>
+<if test="imp_difference"><p>Differnece: <print expr="imp_difference"/></p></if>
+<if test="imp_difference_other"><p>Difference (other): <print expr="imp_difference_other"/></p></if>
+
+<h2>Sources to corroborate the impact</h2>
+
+<if test="imp_evidence_link"><p><print expr="imp_evidence_link"/></p></if>
+
+<if test="imp_evidence_of_change"><p><print expr="imp_evidence_of_change"/></p></if>
+
+  <epc:set name='docs' expr='$item.documents()'>
+    <epc:if test="length($docs) gt 0">
+<p>
+      <epc:phrase ref="page:fulltext" />
+      <table>
+        <epc:foreach expr="$docs" iterator="doc">
+          <tr>
+            <td valign="top" align="right"><epc:print expr="$doc.icon('HoverPreview','noNewWindow')}" /></td>
+            <td valign="top">
+              <epc:print expr="$doc.citation('default')" /><br />
+              <a href="{$doc.url()}" class="ep_document_link"><epc:phrase ref="summary_page:download"/> (<epc:print expr="$doc.doc_size().human_filesize()" />)</a>
+              <epc:if test="$doc.is_public()">
+                          <epc:choose>
+                          <epc:when test="$doc.thumbnail_url('video_mp4').is_set()">
+                          | <epc:print expr="$doc.preview_link(phrase('lib/document:preview'),'docs','video_mp4')" />
+                          </epc:when>
+                          <epc:when test="$doc.thumbnail_url('audio_mp4').is_set()">
+                          | <epc:print expr="$doc.preview_link(phrase('lib/document:preview'),'docs','audio_mp4')" />
+                          </epc:when>
+                          <epc:when test="$doc.thumbnail_url('lightbox').is_set()">
+                          | <epc:print expr="$doc.preview_link(phrase('lib/document:preview'),'docs','lightbox')" />
+                          </epc:when>
+                          </epc:choose>
+                          </epc:if>
+              <epc:if test="!$doc.is_public() and $item.contact_email().is_set() and eprint_status = 'archive'">
+                | <a href="{$config{http_cgiurl}}/request_doc?docid={$doc{docid}"><epc:phrase ref="request:button" /></a>
+              </epc:if>
+  
+              <ul>
+              <epc:foreach expr="$doc.related_objects('http://eprints.org/relation/hasVersion')" iterator="rel">
+                <epc:if test="$rel{relation_type}!='http://eprints.org/relation/isVolatileVersionOf'">
+                  <li><epc:print expr="$rel.citation_link('default')" /></li>
+                </epc:if>
+              </epc:foreach>
+              </ul>
+            </td>
+          </tr>
+        </epc:foreach>
+      </table>
+</p>
+    </epc:if>
+  </epc:set>
+
+</cite:citation>

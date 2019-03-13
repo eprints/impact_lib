@@ -1,0 +1,81 @@
+use EPrints;
+
+use strict;
+use warnings;
+
+sub search_term($$);
+
+my $session = EPrints::Session->new();
+
+my $term = lc $session->param( "q" );
+# my $lookup_file = $session->param( "file" );
+my $mode = $session->param( "mode" ) || "phrase";
+
+print <<END;
+<?xml version="1.0" encoding="UTF-8" ?>
+
+END
+print '<ul>';
+
+for my $r ( 
+  'http://pub.demo.eprints-hosting.org',
+#  'http://eprints.gla.ac.uk',
+#  'http://clok.uclan.ac.uk',
+#  'http://eprints.soton.ac.uk',
+)
+{
+  search_term($r, $term);
+}
+
+print '</ul>';
+
+$session->terminate;
+
+sub search_term($$)
+{
+  my ( $repo, $term ) = @_;
+
+my $source = $repo . '/cgi/search/archive/simple/blah?screen=Search&dataset=archive&_action_export=1&output=EndNote&exp=0|1|archive|-|q%3Aabstract%2Fcreators_name%2Fdate%2Ftitle%3AALL%3AIN%3A' . $term . '&n=&cache=';
+
+open( DATA, "curl -s '$source' |" );
+my ($id, $title) = ('', '');
+my $short_title;
+
+my $togo = 10;
+my $first = 1;
+
+while(<DATA>)
+{
+  if( /^\%T (.*)$/ )
+  {
+    $title = $1;
+
+    $title =~ /(.{1,80})/;
+    $short_title = $1;
+  }
+  elsif( /^\%U (.*)$/ )
+  {
+    $id = $1;
+  }
+
+  if($id && $title)
+  {
+    my $value = "$id - $short_title";
+    $value =~ s/&/&amp;/g;
+    $value =~ s/>/&gt;/g;
+    $value =~ s/</&lt;/g;
+
+    print "<li class='ep_first'>$value" if $first;
+    print "<li>$value" unless $first;
+
+    print "<ul><li id='for:value:relative:_link'>$id</li><li id='for:value:relative:_info'>$title</li></ul>";
+    print "</li>";
+
+    $first = 0;
+    --$togo;
+    ($id, $title) = ('', '');
+    last unless $togo;
+  }
+}
+
+} # end sub

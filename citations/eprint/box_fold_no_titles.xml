@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<cite:citation xmlns="http://www.w3.org/1999/xhtml" xmlns:cite="http://eprints.org/ep3/citation" xmlns:epc="http://eprints.org/ep3/control">
+
+<div class="ep_summary_box" id="{tmp__id}">
+  <div class="ep_summary_box_title">
+    <div class="ep_only_js" id="{tmp__id}_colbar" style="display: none">
+      <a class="ep_box_collapse_link" onclick ="EPJS_blur(event); EPJS_toggleSlideScroll('{tmp__id}_content',true,'{tmp__id}');EPJS_toggle('{tmp__id}_colbar',true);EPJS_toggle('{tmp__id}_bar',false);return false;" href="#"><img src="{$config{base_url}}/style/images/minus.png" border="0" /></a>
+      <a class="ep_box_collapse_text" onclick ="EPJS_blur(event); EPJS_toggleSlideScroll('{tmp__id}_content',true,'{tmp__id}');EPJS_toggle('{tmp__id}_colbar',true);EPJS_toggle('{tmp__id}_bar',false);return false;" href="#"><epc:print expr="$box_title"/></a>
+    </div>
+    <div class="ep_only_js" id="{tmp__id}_bar">
+      <a class="ep_box_collapse_link" onclick ="EPJS_blur(event); EPJS_toggleSlideScroll('{tmp__id}_content',false,'{tmp__id}');EPJS_toggle('{tmp__id}_colbar',false);EPJS_toggle('{tmp__id}_bar',true);return false;" href="#"><img src="{$config{base_url}}/style/images/plus.png" border="0" /></a> 
+      <a class="ep_box_collapse_text" onclick ="EPJS_blur(event); EPJS_toggleSlideScroll('{tmp__id}_content',false,'{tmp__id}');EPJS_toggle('{tmp__id}_colbar',false);EPJS_toggle('{tmp__id}_bar',true);return false;" href="#"><epc:print expr="$box_title"/></a>
+    </div>
+  </div>
+  <div class="ep_summary_box_body" id="{tmp__id}_content" style="display: none">
+    <div id="{tmp__id}_content_inner">         
+      <table class="main_meta_table" style="margin-bottom: 1em; margin-top: 1em; width:100%" cellpadding="3">
+                    
+      <epc:foreach expr="$data{box_metadata}" iterator="fieldname">
+        <epc:if test="is_set($item.property($fieldname))">
+
+          <tr class="main_meta_table_row">
+            <!-- <th align="right" class="rd_meta_table_th"><epc:phrase ref="eprint_fieldname_{$fieldname}" />:</th> -->
+            <td valign="top" class="rd_metatable_td"><epc:print expr="$item.property($fieldname)" /></td>
+          </tr>
+
+        </epc:if>
+      </epc:foreach>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+</cite:citation>

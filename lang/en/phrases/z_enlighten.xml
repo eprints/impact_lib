@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+  <epp:phrase id="eprint_fieldname_creators_guid">Local ID</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators_browse_id">Author(s) ID</epp:phrase>
+  <epp:phrase id="validate:need_creators_or_editors">If an item does not have any <epc:pin name="fieldname">creators</epc:pin> then it must have at least one editor.</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators">Authors</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators_name">Authors</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators_id">Email</epp:phrase>
+  <epp:phrase id="eprint_fieldhelp_creators">Enter in the format given on the first page or title page. If there are more than four authors, click on the [More&nbsp;input&nbsp;rows] button.
+<br/>Example: [<span class="ep_form_example">Smith</span>] [<span class="ep_form_example">J.P.</span>] [<span class="ep_form_example">j.p.smith@elec.gla.ac.uk</span>]
+<br/>Example: [<span class="ep_form_example">Chance-Collins</span>] [<span class="ep_form_example">Chris</span>] [<span class="ep_form_example">ced2h@bio.gla.ac.uk</span>]
+<br/>Example: [<span class="ep_form_example">Fu</span>] [<span class="ep_form_example">Yan-Li</span>] []
+<br/>Example: [<span class="ep_form_example">von H�pfner</span>] [<span class="ep_form_example">Ludwig G.</span>] []
+</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators_orcid">ORCID</epp:phrase>
+
+  <epp:phrase id="metapage_title_funding">Funding</epp:phrase>   
+  <epp:phrase id="eprint_fieldname_funding_project_code">Project Code</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding_investigator_dept">Lead Dept</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding_funder_name">Funder's Name</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding_project_name">Project Name</epp:phrase>
+  <epp:phrase id="eprint_fieldhelp_funding">Information on research funding.</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding">Funding Details</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding_award_no">Award No</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding_investigator_name">Principal Investigator</epp:phrase>
+  <epp:phrase id="eprint_fieldname_funding_funder_code">Funder's Code</epp:phrase>
+
+  <epp:phrase id="viewname_eprint_funder">Funder</epp:phrase>
+  <epp:phrase id="viewname_eprint_project_code">Project Code</epp:phrase>
+  <epp:phrase id="viewname_eprint_collaborators">Collaborators</epp:phrase>
+  <epp:phrase id="viewname_eprint_creators">Creators</epp:phrase>
+  <epp:phrase id="viewname_eprint_pdr_link">PDR Link</epp:phrase>
+  <epp:phrase id="viewname_eprint_web_link">Web Link</epp:phrase>
+
+  <epp:phrase id="viewname_eprint_creators">Creator</epp:phrase>
+  <epp:phrase id="viewtitle_eprint_creators_menu_1">Browse by Creator</epp:phrase>
+  <epp:phrase id="viewtitle_eprint_creators_list">Items where Creator is "<epc:pin name="value1" />"</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators">Creators</epp:phrase>
+  <epp:phrase id="eprint_fieldname_creators_name">Creators</epp:phrase>
+
+  <epp:phrase id="Plugin/InputForm/Component/Upload:from_url">Retrieve file from URL</epp:phrase>
+</epp:phrases>
+

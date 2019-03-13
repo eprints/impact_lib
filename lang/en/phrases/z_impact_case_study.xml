@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+
+
+<!-- New TYPE Phrase and Stage -->
+
+	<epp:phrase id="eprint_typename_impact">Knowledge Exchange &amp; Impact</epp:phrase>
+	<epp:phrase id="eprint_optdetails_type_impact">Activity details &amp; documentation.</epp:phrase>
+    	<epp:phrase id="metapage_title_case_study">Impact Snapshot</epp:phrase>
+    	<epp:phrase id="metapage_title_evidence">Upload new documents</epp:phrase>
+    	<epp:phrase id="metapage_title_public">Public Information</epp:phrase>
+      	
+<!-- Impact fields -->
+
+	<epp:phrase id="eprint_fieldname_imp_summary">Brief summary of research</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_summary_short">Brief summary of research (abridged)</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_title">Title of research</epp:phrase>
+
+	<epp:phrase id="eprint_fieldname_imp_additional_funding">Would additional support assist your impact activities?</epp:phrase>
+	<epp:phrase id="eprint_fieldhelp_imp_additional_funding">Would additional funding or support assist your knowledge exchange and/or impact activities?</epp:phrase>
+
+	<epp:phrase id="eprint_fieldname_imp_contact_public_engagement">Are you aware of the relevant support teams?</epp:phrase>
+	<epp:phrase id="eprint_fieldhelp_imp_contact_public_engagement">Are you aware of the relevant support teams with regards to Public Engagement, Knowledge Exchange and Impact activities?</epp:phrase>
+
+	<epp:phrase id="eprint_fieldname_imp_unfunded">Currently Unfunded</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_esteem_prize">Prize</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_esteem_editor">Editor</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_esteem_committee_chair">Committee Chair</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_esteem_advisory_panel">Advisory Panel</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_esteem_other">Other</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_evidence_of_change">What information or documentation might be able to provide evidence of this influence or change?</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_fund_esrc_iaa">ESRC IAA</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_fund_epsrc_iaa">EPSRC IAA</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_fund_bbsrc_iaa">BBSRC IAA</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_fund_stfc_iaa">STFC IAA</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_fund_chancellors_fund">Chancellor's Fund</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_fund_other">Other</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_difference">Impact Difference</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_difference_other">Other</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_evidence_link">Documentation Link</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_external_collaborators">External Collaborators</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_external_collaborators_organisation">Organisation</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_external_collaborators_name">Person's Name</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_external_collaborators_position">Position</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_web_link">Web Link</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_pdr_link">P&amp;DR Link</epp:phrase>
+
+	<epp:phrase id="eprint_fieldname_imp_engagement">Engagement</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_activity">Engagement Activity</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_description">Description</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_short_description">Short Description</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_nature">Nature of Engagement</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_month">Month</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_year">Year</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_date">Date</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_evid_submitted">Evidence Submitted?</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_web_link">Web Link</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_pdr_link">P&amp;DR Link</epp:phrase>
+
+	<epp:phrase id="eprint_fieldname_imp_engagement_filtered">Engagement (Public)</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_activity">Engagement Activity</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_description">Description</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_nature">Nature of Engagement</epp:phrase>
+	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_month">Month</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_year">Year</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_date">Date</epp:phrase>
+  	<epp:phrase id="eprint_fieldname_imp_engagement_filtered_evid_submitted">Evidence Submitted?</epp:phrase>
+
+	<epp:phrase id="eprint_fieldname_imp_fund_glasgow_ke_fund">Knowledge Exchange Fund</epp:phrase> <!-- Glasgow specific -->
+<!-- Document fields -->	
+  
+	<epp:phrase id="document_fieldname_imp_evidence_type">Documentation type</epp:phrase>
+	<epp:phrase id="document_fieldname_imp_evidence_type_other">Enter details if 'Other' selected</epp:phrase>
+	<epp:phrase id="document_fieldhelp_imp_evidence_type_other"></epp:phrase>
+	
+	
+<!-- Help Text -->	
+
+	<!-- EPRINT -->
+
+	<epp:phrase id="eprint_fieldhelp_imp_summary" type="XHTML">
+      		<p>Please summarise the research that is underpinning your knowledge exchange/external engagement. (Max 100 words)</p>
+  	</epp:phrase>
+	<epp:phrase id="eprint_fieldhelp_imp_title" type="XHTML">
+      		<p>The title of the research that is underpinning your knowledge exchange/external engagement</p>
+  	</epp:phrase>
+  	<epp:phrase id="eprint_fieldhelp_creator_impact" type="XHTML">
+	      	<p>List the principal GU academic(s) involved (e.g. the principal applicant(s) - if this is a funded KE activity) who are within the same school/institute/unit.</p>
+  	</epp:phrase>
+	<epp:phrase id="eprint_fieldhelp_imp_evidence_link" type="XHTML">
+	      		<p>THIS IS FOR DOCUMENTATION ALREADY ONLINE.</p>
+		  	<p>For example, your documentation could be a link to another record in Enlighten:<br />
+		  	<strong>http://eprints.gla.ac.uk/12345</strong></p>
+		  	<p>Or it could be an article or document available from an external website:<br />
+		  	<strong>http://some-newspaper/my-evidence</strong></p>
+	      		<p>Or you may want to list the links to a project website, blog or social media site relevant to your KE and potential impact:<br />
+		  	<strong>http://my-project-website-or-blog.com</strong></p>
+	</epp:phrase>
+		
+	<epp:phrase id="eprint_fieldhelp_imp_engagement" type="XHTML">
+      		<p></p>
+    	</epp:phrase>
+<!--
+	<epp:phrase id="eprint_fieldhelp_imp_additional_funding" type="XHTML">
+      		<p></p>
+    	</epp:phrase>
+  	<epp:phrase id="eprint_fieldhelp_imp_contact_public_engagement" type="XHTML">
+      		<p></p>
+    	</epp:phrase>
+-->
+  	<epp:phrase id="eprint_fieldhelp_imp_evidence_of_change" type="XHTML">
+     		 <p>Please mention here any documentation that is likely to be available in future.</p>
+    	</epp:phrase>
+    	
+    	<epp:phrase id="eprint_fieldhelp_imp_external_collaborators" type="XHTML">
+			<p>Are you working with an external partner? List any partner in the KE activity who comes from a non-academic sector, organisation etc by:</p> 
+				<ol>
+					<li>ORGANISATION (full name, including which branch e.g. if Oxfam, is this Oxfam America or Oxfam UK?)</li>
+					<li>MAIN CONTACT (full name and position, if known)</li>
+				</ol>
+	</epp:phrase>
+	
+	<epp:phrase id="eprint_fieldhelp_imp_engagement" type="XHTML">
+	      		<p>List your planned, ongoing or concluded activities here.</p>
+	      		<p>If you have a programme of activities which include multiple events, you may simply add additional entries here rather than creating a new record each time.</p>
+    	</epp:phrase>
+    	
+    	<epp:phrase id="eprint_fieldhelp_imp_pdr_link" type="XHTML">
+	      		<p>If you choose to, you will be able to allow activities to auto-populate into the KE and Impact section of your P&amp;DR.</p>
+			<p>Note that only those activities set to be public will show for a given record.</p> 
+		  	<p>Not fully functioning yet, but please select an option now.</p>
+        </epp:phrase>
+	<epp:phrase id="eprint_fieldhelp_imp_web_link" type="XHTML">
+	      		<p>There are plans to make your KE and Impact appear automatically in your staff profile page on the main website under a tab called 'Wider Engagement'.</p>
+		  	<p>If you would like this record to be made public in this way please select 'Yes', otherwise select 'No'.</p>
+			<p>Note that only those activities set to be public will show for a given record.</p> 
+  	</epp:phrase>
+  	<epp:phrase id="eprint_fieldhelp_note_impact" type="XHTML">
+	      		<p>Please add any more information here.</p>
+	      		<p>If you have any questions not answered by the guidance, please email: <a href="mailto:"><em>insert email contact here</em></a></p>
+    	</epp:phrase>
+    	
+    	<!-- DOCUMENT -->
+		
+<epp:phrase id="eprint_fieldhelp_imp_unfunded"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_fund_esrc_iaa"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_fund_epsrc_iaa"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_fund_bbsrc_iaa"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_fund_stfc_iaa"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_fund_chancellors_fund"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_fund_other"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_difference"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_difference_other"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_esteem_prize"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_esteem_editor"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_esteem_committee_chair"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_esteem_advisory_panel"></epp:phrase>
+<epp:phrase id="eprint_fieldhelp_imp_esteem_other"></epp:phrase>
+
+	<epp:phrase id="document_fieldhelp_imp_evidence_type">Choose a type of document.</epp:phrase>
+	
+ <!-- Radio Button and List Options --> 
+	
+	<!-- ENGAGEMENT -->
+	<epp:phrase id="impact_engagement_typename_Public">Event with public</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Practitioners">Event with practitioners</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Schools">Event with schools</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Performance">Performance</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Exhibition">Exhibition</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Committee/working">Committee/working group involvement</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Consultation">Consultation</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Pop">Pop science event</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Industry">Industry event</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Media">Media dissemination</epp:phrase>
+	<epp:phrase id="impact_engagement_typename_Initiate">Initiate web/social media channel</epp:phrase>
+  	<epp:phrase id="impact_engagement_typename_Other">Other</epp:phrase>
+  	
+  	<epp:phrase id="impact_activity_nature_typename_Planned">Planned</epp:phrase>
+	<epp:phrase id="impact_activity_nature_typename_Concluded">Concluded</epp:phrase>
+	<epp:phrase id="impact_activity_nature_typename_Ongoing">Ongoing</epp:phrase>
+	
+  	
+  	<!-- DIFFERENCE -->
+  	<epp:phrase id="impact_difference_typename_Policy">Policy influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Professional">Professional practice influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Legislation">Legislation influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Societal">Societal influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Health/wellbeing">Health/wellbeing influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Environmental">Environmental influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Economic">Economic influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Behavioural">Behavioural influence or change</epp:phrase>
+	<epp:phrase id="impact_difference_typename_Technological">Technological influence or change</epp:phrase>
+
+  	<!-- CONTACT RADIO BUTTONS -->
+  	
+  	<epp:phrase id="eprint_radio_imp_additional_funding"><label><epc:pin name="true"/>Yes</label><label><epc:pin name="false"/>No</label></epp:phrase>
+  	<epp:phrase id="eprint_radio_imp_contact_public_engagement"><label><epc:pin name="true"/>Yes</label><label><epc:pin name="false"/>No</label></epp:phrase>
+  	
+  	<!-- PDR / WEB LINKS -->
+	  	
+	<epp:phrase id="eprint_radio_imp_pdr_link"><label><epc:pin name="true"/>Yes</label><label><epc:pin name="false"/>No</label></epp:phrase>
+	<epp:phrase id="eprint_radio_imp_web_link"><label><epc:pin name="true"/>Yes</label><label><epc:pin name="false"/>No</label></epp:phrase>
+	  	
+	<!-- DOCUMENT TYPES -->
+	  	
+	<epp:phrase id="document_fieldopt_imp_evidence_type_Guidelines">Guidlines</epp:phrase>
+	<epp:phrase id="document_fieldopt_imp_evidence_type_Policy Document">Policy Document</epp:phrase>
+	<epp:phrase id="document_fieldopt_imp_evidence_type_Committee Papers">Committee Papers</epp:phrase>
+	<epp:phrase id="document_fieldopt_imp_evidence_type_Citation">Citation</epp:phrase>
+	<epp:phrase id="document_fieldopt_imp_evidence_type_Other">Other</epp:phrase>
+  	
+  	<!-- Phrases to get rid of UNSPECIFIED from the lists -->
+  
+  	<epp:phrase id="eprint_fieldopt_imp_engagement_activity_">Please select...</epp:phrase>
+  	<epp:phrase id="eprint_fieldopt_imp_engagement_nature_">Please select...</epp:phrase>
+  	<epp:phrase id="eprint_fieldopt_imp_engagement_month_">Please select...</epp:phrase>
+  	<epp:phrase id="eprint_fieldopt_imp_engagement_year_">Please select...</epp:phrase>
+  	<epp:phrase id="document_fieldopt_imp_evidence_type_">Please select...</epp:phrase>
+  	
+</epp:phrases>
+
+

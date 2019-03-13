@@ -1,0 +1,99 @@
+.ep_columns_add select
+{
+  font-size: 70%;
+}
+
+
+
+table.ep_form_input_grid_multi_compound
+{
+        margin-left: auto;
+        margin-right: auto;
+}
+
+tr.multi_compound_row td:first-child
+{
+        padding-left: 5px;
+        padding-right: 50px;
+}
+
+tr.multi_compound_row td
+{
+        border: 0px !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+tr.multi_compound_row td.multi_compound_label
+{
+        padding-right: 5px;
+        font-weight: bold;
+}
+
+tr.multi_compound_row td
+{
+        padding-right: 5px;
+}
+
+tr.multi_compound_row_0 td
+{
+  height: 1px;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+td.ep_multi_input
+{
+  border-left: none;
+}
+
+.ep_eprint_link_link,
+.ep_eprint_link_info
+{
+  width: 400px;
+}
+
+
+.summary_page_box_container
+{
+  width: 300px;
+}
+
+.ep_summary_box th
+{
+  min-width: 30%;
+}
+
+/*
+.main_meta_table_row table
+{
+  border-color: white;
+}
+*/
+.main_meta_table
+{
+  width: auto !important;
+}
+.main_meta_table th
+{
+  width: 200px;
+}
+
+.ep_smaller_text
+{
+  font-size: 85%;
+}
+.ep_smaller_text img.ep_form_action_icon
+{
+  height: 20px;
+}
+
+.ep_field_para
+{
+  margin: 0;
+}
+
+.ep_facet_index_section
+{
+  width: 45% !important;
+}
